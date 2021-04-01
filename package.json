@@ -4,10 +4,12 @@
   "scripts": {
     "tsc": "tsc",
     "tscw": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "prettier-format": "prettier --config .prettierrc '**.*.ts' --write",
     "wp": "webpack",
     "wpw": "webpack --watch",
     "serve": "http-server build",
-    "serve1": "webpack serve",
+    "serve1": "rimraf ./dist && webpack serve",
     "dev": "nodemon ./index.js",
     "secondary": "cross-env PORT=3001 nodemon ./index.js"
   },
@@ -28,7 +30,14 @@
     "webpack": "^5.28.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.11.2",
-    "webpack-cli": "^4.6.0"
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "2.2.1",
+    "rimraf": "^3.0.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
