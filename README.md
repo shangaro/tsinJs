@@ -1,0 +1,1 @@
+a typescript configuration for a javascript library
