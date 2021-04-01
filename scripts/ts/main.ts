@@ -1,6 +1,8 @@
 import template from "lodash/template";
 import { Car } from "./car";
+import { Data } from "./data";
 const outputElement = document.getElementById("output");
+const data = new Data();
 const car = new Car("subaru");
 if (outputElement) {
     const compiled = template(
@@ -16,5 +18,9 @@ if (outputElement) {
         carmodel: car.printEngine(),
     });
 
-    car.getItem();
+    // data.getItem();
+    // data.getAddress();
+    // helper.setTimeout();
+    // data.xhr();
+    data.returnAll();
 }

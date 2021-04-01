@@ -10,7 +10,8 @@
     ],
     
     "rules": {
-        "no-console": 0, // Means warning
+        "no-console": 0, //1 Means warning
+        "no-undef":0,
         "prettier/prettier": ["error", {"endOfLine":"auto"}]
     }
 }
