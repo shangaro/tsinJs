@@ -22,5 +22,6 @@ if (outputElement) {
     // data.getAddress();
     // helper.setTimeout();
     // data.xhr();
-    data.returnAll();
+    // data.returnAll(true);
+    data.race();
 }

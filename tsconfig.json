@@ -3,7 +3,7 @@
         "rootDir": "scripts",
         "target": "es2019",
         "lib": [
-          "es2019",
+          "es2020",
           "dom"
         ],
         "module": "commonjs",

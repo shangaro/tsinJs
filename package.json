@@ -11,7 +11,7 @@
     "serve": "http-server build",
     "serve1": "rimraf ./dist && webpack serve",
     "dev": "nodemon ./index.js",
-    "secondary": "cross-env PORT=3001 nodemon ./index.js"
+    "secondary-dev": "cross-env PORT=3001 nodemon ./index.js"
   },
   "dependencies": {
     "@types/lodash": "^4.14.168",
